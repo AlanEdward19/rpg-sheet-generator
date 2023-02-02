@@ -1,0 +1,140 @@
+site_name: C.K.F.A Docs
+extra_css: [./assets/index.css]
+
+repo_url: https://github.com/AlanEdward19/CKFA-Docs
+repo_name: C.K.F.A Docs
+
+extra:
+  alternate:
+    - name: English
+      link: https://alanedward19.github.io/CKFA-Docs-English/ 
+      lang: en
+    
+    - name: Português
+      link: https://alanedward19.github.io/CKFA-Docs/
+      lang: pt
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+theme:
+  name: material
+  logo: assets/logo-cfka.png
+  favicon: assets/favicon-cfka.png
+  features:
+    - navigation.expand
+    - navigation.top
+    - announce.dismiss
+  font:
+    text: Roboto
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      accent: purple
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    
+    - media: "(prefers-color-scheme: dark)"
+      accent: deep purple
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+nav:
+    - Inicio: 'index.md'
+    - Alterações: 'changelog.md'
+    
+    - Design Patterns:
+      - DDD: '1.0/ddd-patern.md'
+      - Repository Pattern : '1.0/repository-pattern.md'
+      - MVC : '1.0/mvc-pattern.md'
+      - TDD : '1.0/tdd-pattern.md'
+
+      - Creational Pattern:
+        - Abstract Factory : '1.0/creational pattern/abstract-pattern.md'
+        - Builder : '1.0/creational pattern/builder-pattern.md'
+        - Factory Method : '1.0/creational pattern/factory-method-pattern.md'
+        - Prototype : '1.0/creational pattern/prototype-pattern.md'
+        - Singleton : '1.0/creational pattern/singleton-pattern.md'
+
+      - Structural Patterns:
+        - Adapter : '1.0/structural pattern/adapter-pattern.md'
+        - Bridge : '1.0/structural pattern/bridge-pattern.md'
+        - Composite : '1.0/structural pattern/composite-pattern.md'
+        - Decorator : '1.0/structural pattern/decorator-pattern.md'
+        - Facade : '1.0/structural pattern/facade-pattern.md'
+        - Flyweight : '1.0/structural pattern/flyweight-pattern.md'
+        - Proxy : '1.0/structural pattern/proxy-pattern.md'
+
+      - Behavioral Patterns:
+        - Chain of Resp : '1.0/behavioral pattern/chain-of-resp-pattern.md'
+        - Command : '1.0/behavioral pattern/command-pattern.md'
+        - Interpreter : '1.0/behavioral pattern/interpreter-pattern.md'
+        - Iterator : '1.0/behavioral pattern/iterator-pattern.md'
+        - Mediator : '1.0/behavioral pattern/mediator-pattern.md'
+        - Memento : '1.0/behavioral pattern/memento-pattern.md'
+        - Observer : '1.0/behavioral pattern/observer-pattern.md'
+        - State : '1.0/behavioral pattern/state-pattern.md'
+        - Strategy : '1.0/behavioral pattern/strategy-pattern.md'
+        - Template Method : '1.0/behavioral pattern/template-method-pattern.md'
+        - Visitor : '1.0/behavioral pattern/visitor-pattern.md'
+    
+    - Presets de Código: 
+      - Python:
+        - Database-related: 'python/python-database-related.md'
+      
+      - C#:
+        - Database-related: 'C#/csharp-database-related.md'
+      
+      - Java:
+        - Database-related: 'Java/java-database-related.md'
+      
+      - Node.js:
+        - Database-related: 'Node.js/nodejs-database-related.md'
+      
+      - React:
+        - Database-related: 'React/react-database-related.md'
+      
+      - ReactNative:
+        - Database-related: 'ReactNative/reactnative-database-related.md'
+      
+      - Docker:
+        - Comandos Primordiais: 'Docker/docker-main-comands.md'
+    
+    - Tecnologias:
+      - C#:
+        - OOP: ''
+        - API: ''
+        - Entity Framework: ''
+        - Dapper: ''
+        - AutoMapper : ''
+        - DTO (Data Transfer Object): ''
+     
+      - Python:
+        - OOP: ''
+        - PYODBC: ''
+        - Pandas: ''
+     
+      - Java: ''
+     
+      - React: ''
+     
+      - Node.js: ''
+     
+      - Docker: ''
+     
+      - SQL Server:
+        - Criação de Index: 'SQL/create-index.md'
+        - Banco não relacional : 'SQL/non-relational-database.md'
+        - Banco relacional : 'SQL/relational-database.md'
+      
+      - Logica:
+        - Estrutura de dados: 'logic/data-structure.md'
+      
+      - Microserviços: ''
