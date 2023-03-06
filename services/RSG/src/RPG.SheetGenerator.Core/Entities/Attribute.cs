@@ -1,9 +1,9 @@
 ﻿namespace RPG.SheetGenerator.Core.Entities;
 
-public class Classes
+public class Attribute
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
-    public int LifeAmount { get; set; }
+    public int Value { get; set; }
 }
