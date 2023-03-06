@@ -7,11 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
+    <Folder Include="Commands\CreateUpdateAttribute\" />
+    <Folder Include="Commands\CreateUpdateBackground\" />
+    <Folder Include="Commands\CreateUpdateCampaign\" />
+    <Folder Include="Commands\CreateUpdateCharacter\" />
+    <Folder Include="Commands\CreateUpdateClass\" />
+    <Folder Include="Commands\CreateUpdateInventory\" />
+    <Folder Include="Commands\CreateUpdateItem\" />
+    <Folder Include="Commands\CreateUpdateItemType\" />
+    <Folder Include="Commands\CreateUpdateLanguage\" />
+    <Folder Include="Commands\CreateUpdatePlayer\" />
+    <Folder Include="Commands\CreateUpdateProficiency\" />
+    <Folder Include="Commands\CreateUpdateRace\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Validators\" />
     <Folder Include="Utils\" />
     <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RPG.SheetGenerator.Core\RPG.SheetGenerator.Core.csproj" />
+    <ProjectReference Include="..\RPG.SheetGenerator.Infrastructure\RPG.SheetGenerator.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
