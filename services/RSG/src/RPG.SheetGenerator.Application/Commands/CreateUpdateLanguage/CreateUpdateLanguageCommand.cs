@@ -4,4 +4,5 @@ public class CreateUpdateLanguageCommand
 {
     public string Name { get; set; }
     public int? RaceId { get; set; }
+    public int? BackgroundId { get; set; }
 }
