@@ -3,6 +3,7 @@
 public class CreateUpdateRaceCommand
 {
     public string Name { get; set; }
+    public int Speed { get; set; }
 
     public IEnumerable<int>? LanguageId { get; set; }
 }
