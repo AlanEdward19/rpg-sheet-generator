@@ -10,7 +10,6 @@
     <Folder Include="Commands\CreateUpdateAttribute\" />
     <Folder Include="Commands\CreateUpdateBackground\" />
     <Folder Include="Commands\CreateUpdateCampaign\" />
-    <Folder Include="Commands\CreateUpdateCharacter\" />
     <Folder Include="Commands\CreateUpdateClass\" />
     <Folder Include="Commands\CreateUpdateInventory\" />
     <Folder Include="Commands\CreateUpdateItem\" />
@@ -19,10 +18,31 @@
     <Folder Include="Commands\CreateUpdatePlayer\" />
     <Folder Include="Commands\CreateUpdateProficiency\" />
     <Folder Include="Commands\CreateUpdateRace\" />
+    <Folder Include="Commands\Handler\" />
+    <Folder Include="Queries\Handler\" />
+    <Folder Include="Queries\GetAlignment\" />
+    <Folder Include="Queries\GetAttribute\" />
+    <Folder Include="Queries\GetBackground\" />
+    <Folder Include="Queries\GetCampaign\" />
+    <Folder Include="Queries\GetCharacter\" />
+    <Folder Include="Queries\GetClass\" />
+    <Folder Include="Queries\GetInventory\" />
+    <Folder Include="Queries\GetItem\" />
+    <Folder Include="Queries\GetItemType\" />
+    <Folder Include="Queries\GetLanguage\" />
+    <Folder Include="Queries\GetPlayer\" />
+    <Folder Include="Queries\GetProficiency\" />
+    <Folder Include="Queries\GetRace\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Validators\" />
     <Folder Include="Utils\" />
-    <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
