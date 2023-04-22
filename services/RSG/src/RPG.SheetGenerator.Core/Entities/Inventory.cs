@@ -1,15 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RPG.SheetGenerator.Core.Entities;
 
 public class Inventory
 {
+    [Key]
     public int Id { get; set; }
     public string Name { get; set; }
-    public Guid CharacterId { get; set; }
 
     public virtual IEnumerable<Item> Items { get; set; }
+    public virtual IEnumerable<Character> Characters { get; set; }
 
-    [ForeignKey(nameof(CharacterId))]
-    public virtual Character Character { get; set; }
+    public void AddItem(Item item) => Items.Append(item);
 }

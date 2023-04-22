@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RPG.SheetGenerator.Core.Entities;
 public class Campaign
 {
+    [Key]
     public Guid CampaignId { get; set; }
     public Guid GamemasterId { get; set; }
     public string CampaignName { get; set; }

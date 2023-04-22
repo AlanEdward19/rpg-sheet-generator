@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RPG.SheetGenerator.Core.Entities;
 
 public class Item
 {
+    [Key]
     public int Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
@@ -11,4 +13,6 @@ public class Item
 
     [ForeignKey(nameof(TypeId))]
     public virtual ItemType Type { get; set; }
+
+    public virtual IEnumerable<Inventory> Inventories { get; set; }
 }
