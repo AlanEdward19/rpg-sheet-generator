@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  rpg.sheetgenerator.api:
+    depends_on:
+        - "sqlserver"
+
+    image: ${DOCKER_REGISTRY-}rpgsheetgeneratorapi
+    build:
+      context: .
+      dockerfile: RPG.SheetGenerator/Dockerfile
+
+    ports:
+        - "5000:5000" 
+
+    environment:
+        ASPNETCORE_URLS: "http://+:5000"
+
+
+  sqlserver:
+    container_name: 'RPG.SheetGenerator.Database'
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+        SA_USERNAME: "RSG_root"
+        SA_PASSWORD: "Rsg12345"
+        ACCEPT_EULA: "Y"
+        MSSQL_PID: "Developer"
+    volumes:
+        - ../volumes/mssql_data:/var/opt/mssql/data
+    ports:
+        - "1433:1433"
+
+networks: 
+    rsg.networks:
+        driver: bridge

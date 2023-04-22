@@ -5,13 +5,15 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPG.SheetGenerator.API", "RPG.SheetGenerator\RPG.SheetGenerator.API.csproj", "{499007DF-616E-44AF-921A-C10AADEFAA40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.SheetGenerator.Core", "RPG.SheetGenerator.Core\RPG.SheetGenerator.Core.csproj", "{CFBA48D6-991E-46EB-9BB9-2476A273A513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPG.SheetGenerator.Core", "RPG.SheetGenerator.Core\RPG.SheetGenerator.Core.csproj", "{CFBA48D6-991E-46EB-9BB9-2476A273A513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.SheetGenerator.Infrastructure", "RPG.SheetGenerator.Infrastructure\RPG.SheetGenerator.Infrastructure.csproj", "{5ACDD8AE-5939-4F51-AE97-914BD937B890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPG.SheetGenerator.Infrastructure", "RPG.SheetGenerator.Infrastructure\RPG.SheetGenerator.Infrastructure.csproj", "{5ACDD8AE-5939-4F51-AE97-914BD937B890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.SheetGenerator.Application", "RPG.SheetGenerator.Application\RPG.SheetGenerator.Application.csproj", "{05F65647-8137-4933-B2E6-AD896BE0908A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPG.SheetGenerator.Application", "RPG.SheetGenerator.Application\RPG.SheetGenerator.Application.csproj", "{05F65647-8137-4933-B2E6-AD896BE0908A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.SheetGenerator.Tests", "..\test\RPG.SheetGenerator.Tests\RPG.SheetGenerator.Tests.csproj", "{FB071A95-82D6-4EFF-B840-D352A29F0670}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPG.SheetGenerator.Tests", "..\test\RPG.SheetGenerator.Tests\RPG.SheetGenerator.Tests.csproj", "{FB071A95-82D6-4EFF-B840-D352A29F0670}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C9EBBF6F-04FE-4307-8619-57C8CAF3451F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FB071A95-82D6-4EFF-B840-D352A29F0670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB071A95-82D6-4EFF-B840-D352A29F0670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB071A95-82D6-4EFF-B840-D352A29F0670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9EBBF6F-04FE-4307-8619-57C8CAF3451F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9EBBF6F-04FE-4307-8619-57C8CAF3451F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9EBBF6F-04FE-4307-8619-57C8CAF3451F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9EBBF6F-04FE-4307-8619-57C8CAF3451F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
