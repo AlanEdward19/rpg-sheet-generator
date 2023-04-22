@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.ConfigureController();
 builder.Services.ConfigureServices(builder.Configuration);
+builder.Services.AddHealthChecks();
 
 #endregion
 
@@ -20,5 +21,9 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
     app.ConfigureApiDocumentarionUi();
+
+app.UseAuthorization();
+app.ConfigureEndpoints(builder.Configuration.GetSection("EndPointsConfig"));
+app.ConfigureMiddlewares();
 
 app.Run();
